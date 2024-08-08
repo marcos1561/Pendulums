@@ -1,5 +1,14 @@
 module Pendulums
 
-# Write your package code here.
+export Normal
+export integrate
+export animate, VideoCfg, AnimationCfg
+
+include("integration.jl")
+include("animation.jl")
+include("normal.jl")
+
+using .Animation
+using .Integration
 
 end
